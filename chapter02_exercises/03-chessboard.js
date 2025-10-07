@@ -1,15 +1,15 @@
 let size = 8;
 
-for (let column = 0; column < size; column = column + 1) {
-    let row = '';
+for (let height = 0; height < size; height = height + 1) {
+    let width = '';
 
-    if (column % 2 === 0) {
-        while (row.length < size) {
-        row += ' ' + '#';
+    if (height % 2 === 0) {
+        while (width.length < size) {
+        width += ' ' + '#';
         }
     } else
-    while (row.length < size) {
-        row += '#' + ' ';
+    while (width.length < size) {
+        width += '#' + ' ';
     }
-    console.log(row + '\n');
+    console.log(width + '\n');
 }
