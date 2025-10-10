@@ -1,7 +1,19 @@
-function range(start, end) {
+function range(start, end, step) {
     let numbers = [];
-    for (let i = start; i <= end; i++) {
-        numbers.push(i);
+    if (step !== undefined) {
+        if (step < 0) {
+            for (let i = start; i >= end; i += step) {
+                numbers.push(i);
+            }
+        } else {
+            for (let i = start; i <= end; i += step) {
+                numbers.push(i);
+            }
+        }
+    } else {
+        for (let i = start; i <= end; i++) {
+            numbers.push(i);
+        }
     }
     return numbers;
 }
