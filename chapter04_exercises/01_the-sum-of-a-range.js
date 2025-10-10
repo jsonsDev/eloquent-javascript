@@ -6,6 +6,14 @@ function range(start, end) {
     return numbers;
 }
 
+function sum(numbers) {
+  let result = 0;
+    for (let number of numbers) {
+        result += number;
+    }
+  return result;
+}
+
 // Eloquent JavaScript provided logs:
 console.log(range(1, 10));
 // → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
