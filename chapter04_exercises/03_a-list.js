@@ -20,6 +20,12 @@ function prepend(value, list) {
     return {value, rest: list}
 }
 
+function nth(list, number) {
+    if (!list) return undefined;
+    else if (number == 0) return list.value;
+    else return nth(list.rest, number - 1);
+}
+
 // Eloquent JavaScript provided logs:
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}
