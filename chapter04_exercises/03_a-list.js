@@ -16,6 +16,10 @@ function listToArray(list) {
     return array;
 }
 
+function prepend(value, list) {
+    return {value, rest: list}
+}
+
 // Eloquent JavaScript provided logs:
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}
