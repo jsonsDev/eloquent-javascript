@@ -6,6 +6,16 @@ function arrayToList(array) {
     return list;
 }
 
+function listToArray(list) {
+    let array = [];
+    let item = list;
+    while (item !== null) {
+        array.push(item.value);
+        item = item.rest;
+    }
+    return array;
+}
+
 // Eloquent JavaScript provided logs:
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}
